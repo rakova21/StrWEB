@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VARKA</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Оставьте отзыв о нашей кофейне</h1>
+        <h1 style="color: saddlebrown;">VARKA</h1>
+        <form action="/submit" method="POST">
+            <fieldset>
+                <legend>Данные от аккаунта</legend>
+                <br>
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="tel">Телефон:</label>
+                <input type="tel" id="tel" name="tel"><br><br>
+
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" name="password" required><br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Оцените наш сервис</legend>
+                <br>
+                <label for="excellent">
+                    <input type="radio" id="excellent" name="rating" value="excellent">
+                    Отлично
+                </label><br>
+                <label for="good">
+                    <input type="radio" id="good" name="rating" value="good">
+                    Хорошо
+                </label><br>
+                <label for="average">
+                    <input type="radio" id="average" name="rating" value="average">
+                    Средне
+                </label><br>
+                <label for="poor">
+                    <input type="radio" id="poor" name="rating" value="poor">
+                    Плохо
+                </label><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Рассылка от VARKA</legend>
+                <br>
+                <label for="newsletter">
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    Получать уведомления об акциях
+                </label><br><br>
+
+                <label for="file">Прикрепите файл:</label>
+                <input type="file" id="file" name="file"><br><br>
+            </fieldset>
+
+            <input type="submit" value="Отправить">
+            <input type="reset" value="Сбросить">
+        </form>
+    </div>
+</body>
+</html>
